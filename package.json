@@ -1,0 +1,13 @@
+{
+    "id": "jc-record",
+    "name": "基于jsfun-record修正并优化的声音录制插件",
+    "version": "1.0.5",
+    "description": "基于jsfun-record修正并优化的声音录制插件",
+    "keywords": [
+        "录制",
+        "声音",
+        "音频",
+        "录音",
+        "长按录音"
+    ]
+}

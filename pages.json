@@ -1,0 +1,158 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				// "navigationBarBackgroundColor": "#0175FE",
+				// "navigationBarTextStyle": "white",
+				// #ifdef h5
+				"navigationStyle": "custom",
+				// #endif 
+				"app-plus": {
+					"titleNView": true
+				}
+			}
+		},
+		{
+			"path": "pages/index/game/order",
+			"style": {
+				"navigationBarTitleText": "订单详情"
+			}
+		},
+		{
+			"path": "pages/index/game/orderDet",
+			"style": {
+				"navigationBarTitleText": "订单详情",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/my/index",
+			"style": {
+				"navigationBarTitleText": "我的",
+				// #ifdef h5
+				"navigationStyle": "custom",
+				// #endif 
+				"app-plus": {
+					"titleNView": false,
+					"scrollIndicator": "none",
+					"titleNView": true
+				}
+			}
+		},
+		{
+			"path": "pages/public/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/public/bind",
+			"style": {
+				"navigationBarTitleText": "换绑手机号"
+			}
+		},
+		{
+			"path": "pages/public/forgetPwd",
+			"style": {
+				"navigationBarTitleText": "重置密码"
+			}
+		},
+
+		{
+			"path": "pages/public/loginphone",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/public/pwd",
+			"style": {
+				"navigationBarTitleText": "修改密码"
+			}
+		},
+		{
+			"path": "pages/public/register",
+			"style": {
+				"navigationBarTitleText": "注册"
+			}
+		}, {
+			"path": "pages/order/index",
+			"style": {
+				"navigationBarTitleText": "购物车"
+			}
+		}, {
+			"path": "pages/order/orderDet",
+			"style": {
+				"navigationBarTitleText": "购物车"
+			}
+		}
+	],
+	"subPackages": [{
+		"root": "my",
+		"pages": [
+			{
+				"path": "address/address",
+				"style": {
+					"navigationBarTitleText": "地址管理",
+					"enablePullDownRefresh": true
+				}
+			},
+			{
+				"path": "address/Endaddress",
+				"style": {
+					"navigationBarTitleText": "添加地址",
+					"enablePullDownRefresh": false
+				}
+			}, 
+			{
+				"path": "order/index",
+				"style": {
+					"navigationBarTitleText": "我的订单",
+					"enablePullDownRefresh": true
+				}
+			}
+		]
+	}],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "省钱兄家政",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#ffffff"
+	},
+	"tabBar": {
+		"color": "#000000",
+		"selectedColor": "#557EFD",
+		"backgroundColor": "#FFFFFF",
+		"borderStyle": "black",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabbar/index_.png",
+				"selectedIconPath": "static/tabbar/index.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/order/index",
+				"iconPath": "static/tabbar/shop_.png",
+				"selectedIconPath": "static/tabbar/shop.png",
+				"text": "购物车"
+			},
+			// {
+			// 	"pagePath": "pages/order/index",
+			// 	"iconPath": "static/tabbar/order_.png",
+			// 	"selectedIconPath": "static/tabbar/order.png",
+			// 	"text": "订单"
+			// },
+			{
+				"pagePath": "pages/my/index",
+				"iconPath": "static/tabbar/my_.png",
+				"selectedIconPath": "static/tabbar/my.png",
+				"text": "我的"
+			}
+		]
+	}
+}
